@@ -89,30 +89,30 @@ http://localhost:3000
 
 ## Docker Build, Tag, Push
 
-Replace `murughan1985` with your Docker Hub username.
+Replace `obpuj` with your Docker Hub username.
 
 ### Frontend
 ```bash
-docker build -t murughan1985/novacart-frontend:v1 ./frontend
-docker tag murughan1985/novacart-frontend:v1 murughan1985/novacart-frontend:latest
-docker push murughan1985/novacart-frontend:v1
-docker push murughan1985/novacart-frontend:latest
+docker build -t obpuj/novacart-frontend:v1 ./frontend
+docker tag obpuj/novacart-frontend:v1 obpuj/novacart-frontend:latest
+docker push obpuj/novacart-frontend:v1
+docker push obpuj/novacart-frontend:latest
 ```
 
 ### Product Service
 ```bash
-docker build -t murughan1985/novacart-product-service:v1 ./product-service
-docker tag murughan1985/novacart-product-service:v1 murughan1985/novacart-product-service:latest
-docker push murughan1985/novacart-product-service:v1
-docker push murughan1985/novacart-product-service:latest
+docker build -t obpuj/novacart-product-service:v1 ./product-service
+docker tag obpuj/novacart-product-service:v1 obpuj/novacart-product-service:latest
+docker push obpuj/novacart-product-service:v1
+docker push obpuj/novacart-product-service:latest
 ```
 
 ### Cart Service
 ```bash
-docker build -t murughan1985/novacart-cart-service:v1 ./cart-service
-docker tag murughan1985/novacart-cart-service:v1 murughan1985/novacart-cart-service:latest
-docker push murughan1985/novacart-cart-service:v1
-docker push murughan1985/novacart-cart-service:latest
+docker build -t obpuj/novacart-cart-service:v1 ./cart-service
+docker tag obpuj/novacart-cart-service:v1 obpuj/novacart-cart-service:latest
+docker push obpuj/novacart-cart-service:v1
+docker push obpuj/novacart-cart-service:latest
 ```
 
 ## GitHub Actions CI/CD
@@ -137,7 +137,7 @@ Required repository secrets:
 
 ## Kubernetes Deployment (Kind)
 
-Before applying manifests, update image names in `k8s/*.yaml` from `murughan1985/...` to your Docker Hub username.
+Before applying manifests, update image names in `k8s/*.yaml` from `obpuj/...` to your Docker Hub username.
 
 ### Create Kind cluster
 ```bash
